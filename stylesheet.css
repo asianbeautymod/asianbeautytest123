@@ -1,0 +1,821 @@
+/***********CUSTOM FLAIR FOR MODERATORS & USERS************/
+
+.author[href$="/thecakepie"]:after{color: #8a5460 !important; content: " captain mod"}
+.author[href$="/iamOshawott"]:after{color: #8a5460 !important; content: "  ༼ つ ◕_◕ ༽つ [retired mod]"}
+.author[href$="/AutoModerator"]:after{color: #8a5460 !important; content: " Oshawott's Bot"}
+.author[href$="/biibiibeauty"]:after{color: #8a5460 !important; content: " Wishtrend - Social Media Design"}
+.author[href$="/mishibox"]:after{color: #8a5460 !important; content: " MISHIBOX Representative"}
+.author[href$="/ellumina"]:after{color: #8a5460 !important; content: " Mod [currently on hiatus]"}
+.author[href$="/ashlaboo"]:after{color: #8a5460 !important; content: " a wild modboo (•ㅅ•❀) [retired mod]"}
+.author[href$="/Ronrinesu"]:after{color: #8a5460 !important; content: " Bird person / Bio nerd"}
+.author[href$="/kstoops2conquer"]:after{color: #8a5460 !important; content: " Friendly Grump "}
+.author[href$="/kitty_paw"]:after{color: #8a5460 !important; content: " Lurking Around"}
+.author[href$="/AsianBeautyMod"]:after{color: #8a5460 !important; content: " ~*~ umbrella mod account~*~ "}
+.author[href$="/petitoignon"]:after{color: #8a5460 !important; content: " Casual AB Evangelist + AutoMod Wrangler"}
+.author[href$="/starward-"]:after{color: #8a5460 !important; content: " Upside Down Mod"}
+.author[href$="/printf-username"]:after{color: #8a5460 !important; content: " neeeeeeeerd"}
+.author[href$="/tag_bitch"]:after{color: #8a5460 !important; content: " DM - Help Threads"}
+.author[href$="/pokepink"]:after{color: #8a5460 !important; content: " Graphic Designer"}
+
+
+/*PINK BLOGGER FLAIR FOR MODS*/
+.flair-MALL{
+visibility: visible;
+text-indent: -9999px;
+border: none;
+background: url(%%43%%) no-repeat top left;
+width: 16px;
+height: 16px
+}
+
+.flair-blob{
+visibility: visible;
+text-indent: -9999px;
+border: none;
+background: url(%%blob-upsidedown%%) no-repeat top left;
+width: 16px;
+height: 16px
+}
+
+.flair-MALL:hover {
+visibility: visible;
+width: auto !important;
+height: auto !important;
+text-indent: 0 !important;
+background-image: none !important;
+cursor: default;
+padding: 0 3px;
+background: #f0f0f0;
+color: #3e5267;
+border: 1px solid #aaa;
+border-radius: 2px;
+margin: 0 0 3px 0
+}
+
+
+
+/***********GENERAL SETTINGS************/
+
+/*HIDE POST RANKINKS*/
+.rank { display: none; }
+
+
+/*DOWNVOTE CHASTISEMENT*/
+.midcol {
+padding: 10px;
+}
+
+.link .midcol {
+margin-left: 8px;
+margin-right: -3px;
+}
+
+.comment .arrow.down:hover::before {
+position: absolute;
+display: block;
+z-index: 1000;
+width: 200px;
+padding: 2px;
+background-color: #8a5460;
+border-radius:5px;
+content: "Please reconsider before downvoting; this is not a disagree button.";
+text-align: center;
+font-size: 12px;
+font-weight: normal;
+margin-left: 2px;
+margin-top: 22px;
+box-shadow: 1px 1px 5px #816055;
+text-transform:lowercase;
+color:#FFFFFF;
+}
+
+/*CREDITS*/
+.titlebox .bottom { margin: 20px 0; font-size: 0px; cursor: text; border-top: 1px solid #dee5e7; }
+.titlebox .bottom::before { font-size: 10px; content: "css & designs by "; padding-left: 10px; }
+.titlebox .bottom::after { font-size: 10px; color: #369; cursor: pointer; content: "iamoshawott & MissPicklesMeow"; }
+.titlebox .bottom .author[href$="/iamoshawott"]:after { display: none; }
+.titlebox .bottom .author[href$="/MissPicklesMeow"]:after { display: none; }
+
+/***********SUB HEADER************/
+.pagename a {
+background: url(%%AsianBeauty-BANNER%%);
+position: absolute;
+top:19px;
+bottom:25px;
+width:1080px;
+height:216px;
+text-indent: -9999px;
+}
+
+#header-bottom-left {
+top:25px;
+background-color: #ffffff;
+}
+
+#header {
+
+height: 250px;
+-moz-box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #816055;
+margin:0px;
+padding:0;
+border-bottom:25px;
+width:100%;
+z-index:100;
+background-color:#ffffff;
+}
+
+.titlebox h1 a {
+text-indent: -9999em;
+display: block;
+height: 70px;
+
+width: 257px;
+margin: 0 auto;
+}
+
+/*MOVE SNOO*/
+
+.pagename a, #header-img { position: absolute; z-index: 1; }
+
+#header-img {
+position: absolute;
+bottom: 0px;
+}
+
+#header-img.default-header {
+    text-indent: -9999px;
+    background-position: 0px -1323px;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 35px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 3px;
+margin-left: 3px;
+}
+
+/***********BACKGROUND************/
+
+html { min-width: 848px; }
+
+a { color: #816055; }
+
+a:hover { text-decoration: none; color: #d2c6b8!important;     transition: .5s;
+}
+
+.link { padding: 15px; background: none; border-radius: 0px; margin-right: 308px; position: relative; }
+.md a {
+    color: #816055;
+    text-decoration: none;
+}
+.thing .title {
+    color: #816055;
+}
+.thing .title:visited {
+    color: #d2c6b8;
+}
+
+/***********TAB MENU*************/
+
+.tabmenu li.selected a { border: none; }
+
+.tabmenu li a { background: none; font-size: 10px; color: #8a5460; }
+
+.menuarea { padding: 5px 9px; border-bottom: none; font-size: 10px; }
+
+div#header-bottom-left ul.tabmenu { position: absolute; bottom: 6px; left: 120px; text-transform: lowercase!important; font-size: 10px; margin-left: 12px; }
+
+#header .tabmenu li a { color: #816055; background-color: #none; }
+#header .tabmenu li.selected a { color: #d2c6b8; background-color: #none; }
+
+
+/***********USER MENU************/
+
+#header-bottom-right { position: absolute; right: 6px; bottom: 1px; background: transparent; font-size: 10px; }
+
+#header-bottom-right a { color: #8a5460; }
+
+
+/***********SUBMIT BUTTONS***********/
+
+.morelink .nub {
+display: none;
+
+}
+.morelink a {
+    border-radius: 5px;
+    background: #d2c6b8;
+    color: #FFF;
+text-transform: lowercase;
+line-height:40px;
+height:40px;
+border: none!important;
+}
+.morelink {
+    border: none;
+margin-bottom:5px;
+}
+.submit-text {
+margin-top: 20px;
+}
+
+/***********USER MAIL***********/
+
+#mail.havemail {
+background-image:url(%%MAIL%%);
+background-position:0px 0px;
+}
+
+#mail.nohavemail {
+background-image:url(%%NOMAIL%%);
+background-position:0px 0px;
+}
+
+/***********MOD MAIL************/
+
+#modmail.havemail {
+background-image:url(%%MODMAIL%%);
+background-position:4px 4px;
+}
+
+#modmail.nohavemail {
+background-image:url(%%NOMODMAIL%%);
+background-position:4px 4px;
+}
+
+/***********CHANGE SUBSCRIBER BUTTON COLOR***********/
+.fancy-toggle-button .add, .RESshortcutside, .RESDashboardToggle {
+font-size: 9px!important;
+    border: none!important;
+background-position: center;
+    text-transform: lowercase;
+    transition: .2s;
+    background-image: none!important;
+background-color: #8a5460!important;
+
+}
+
+.fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove{
+font-size: 9px!important;
+    border: none!important;
+background-position: center;
+    text-transform: lowercase;
+    transition: .2s;
+    background-image: none!important;
+background-color:#d2c6b8!important;
+}
+
+/***********SIDEBAR***********/
+
+.titlebox {
+background: #ffffff;
+border-bottom: 1px solid #d2c6b8;
+border-radius: 5px;
+padding: 10px;
+
+}
+
+h1.hover.redditname {
+background-repeat:no-repeat;
+margin-top:-50px;
+}
+
+.titlebox .md {
+color: #000000;
+overflow: visible; }
+
+.titlebox .usertext .md > h2 {
+background-color: #8a5460;
+border:none;
+border-radius:5px;
+color: white;
+text-transform:lowercase;
+font-weight:bold;
+margin: 5px -14px 5px -14px;
+padding: 5px 0 5px 12px;
+font-size:15px;
+cursor: pointer; line-height:30px;
+}
+
+.titlebox .usertext .md > h2::after {
+border-color: transparent #987417 transparent transparent;
+border-style: solid;
+border-width: 0px;
+content: "";
+display: block;
+height: 0;
+margin-left: -35px;
+margin-top: -10px;
+position: absolute;
+width: 0;
+z-index: -1;
+cursor: pointer; }
+
+
+
+/***********THUMBNAILS AND POSTS************/
+
+.thumbnail.self {
+background-position: 1;
+
+}
+
+.stickied a.thumbnail {
+}
+
+.stickied .title {
+color: #8a5460!important;
+}
+
+.stickied-tagline {
+color: #8a5460!important;
+}
+
+/***SEARCH***/
+#search input[type=text] {
+    height: 40px;
+border-radius:5px;
+}
+input[type=text], #search input[type=text], .combined-search-page #search input[type=text], #editShortcutDialog input[type=text], .pretty-form input[type=text], .linkinfo .shortlink input, .linefield input[type=text], .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .login-form-side input[type=text], .login-form-side input[type=password], textarea, .pretty-form textarea, .c-form-control, input[type=checkbox], input[type=radio], .res .side h1.redditname+div:before, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    border: 1px 816055;
+    border-radius: 5px;
+    background-color: FFF;
+    color: #000;
+}
+#search input[type=text] {
+    border: 1px 816055;
+    font-size: 13px;
+    font-family: verdana;
+    width: 300px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 6px;
+    padding-right: 25px;
+    padding-left: 9px;
+    vertical-align: middle;}
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+.infobar {
+    background-color: #d2c6b8;
+    border-color: #816055;
+    border-style: solid;
+    border-width: 1px;
+    font-size: small;
+    margin: 5px 305px 5px 0px;
+    padding: 5px 10px;
+}
+
+
+/***********BLOGGER FLAIR***********/
+
+.flair-MAL{
+visibility: visible;
+text-indent: -9999px;
+border: none;
+background: url(%%33%%) no-repeat top left;
+width: 16px;
+height: 16px
+}
+
+.flair-MAL:hover {
+visibility: visible;
+width: auto !important;
+height: auto !important;
+text-indent: 0 !important;
+background-image: none !important;
+cursor: default;
+padding: 0 3px;
+background: #f0f0f0;
+color: #3e5267;
+border: 1px solid #aaa;
+border-radius: 2px;
+margin: 0 0 3px 0
+}
+
+/***MAIN PAGE***/
+.sitetable {
+    list-style-type: none;
+}
+.thing {
+border-bottom: 1px solid #8a5460;
+}
+
+.midcol {
+    float: left;
+    margin-right: 7px;
+    margin-left: 7px;
+margin-top: -10px;
+    background: transparent;
+    overflow: hidden;
+}
+
+/***********LINK FLAIR FILTER***********/
+
+html:lang(qu) .linkflair-question {
+display: none    }
+html:lang(sw) .linkflair-swatches {
+display: none    }
+html:lang(bs) .linkflair-business {
+display: none    }
+html:lang(di) .linkflair-discovery {
+display: none    }
+html:lang(ro) .linkflair-meetups {
+display: none    }
+html:lang(ro) .linkflair-journal {
+display: none    }
+html:lang(al) .linkflair-question, html:lang(al) .linkflair-swatches, html:lang(al) .linkflair-hauls, html:lang(al) .linkflair-business, html:lang(al) .linkflair-fluff {
+display: none    }
+
+.side a[href*='mod-post'], .side a[href*='review'], .side a[href*='question'], .side a[href*='swatches'], .side a[href*='discussion'], .side a[href*='business'], .side a[href*='fluff'], .side a[href*='discovery'], .side a[href*='meetups'], .side a[href*='journal'], a[href*='#mp'], .side a[href*='#re'], .side a[href*='#ps'], .side a[href*='#qu'], .side a[href*='#sw'], .side a[href*='#ha'], .side a[href*='#di'], .side a[href*='#mp'], .side a[href*='#bs'], .side a[href*='#fl'], .side a[href*='#al'], .side a[href="http://goo.gl/9jxY49"]{
+display: inline-block;
+position: relative;
+width: 92px;
+text-align: center;
+font-size: 75%;
+padding: 3px 10px;
+color: #fff;
+background: #bdc3c7;
+}
+
+.side a[href*='mod-post'] { margin: 0 0 5px 30px; background: #e21720; }
+.side a[href*='review'] { margin: 0 0 5px 10px; background: #00b9ce; }
+.side a[href*='question'] { margin: 0 0 5px 30px; background: #b196b9; }
+.side a[href*='swatches'] { margin: 0 0 5px 10px; background: #f1c40f; }
+.side a[href*='discussion'] { margin: 0 0 5px 30px; background: #f18c92; }
+.side a[href*='business'] { margin: 0 0 5px 10px; background: #d07fb1; }
+.side a[href*='discovery'] { margin: 0 0 5px 30px; background: #4dffc3; }
+.side a[href*='meetups'] { margin: 0 0 5px 10px; background: #3333ff; }
+.side a[href*='journal'] { margin: 0 0 5px 30px; background: #751aff; }
+.side a[href='http://goo.gl/9jxY49'] { margin:0 0 5px 10px; background: #bdc3c7; }
+
+.side a[href*='#qu'] { margin: 0 0 5px 30px; background: #b196b9; }
+.side a[href*='#sw'] { margin: 0 0 5px 10px; background: #f1c40f; }
+.side a[href*='#ha'] { margin: 0 0 5px 30px; background: #31a081; }
+.side a[href*='#bs'] { margin: 0 0 5px 10px; background: #d07fb1; }
+.side a[href*='#fl'] { margin: 0 0 5px 30px; background: #7dce9f; }
+.side a[href*='#al'] { margin:0 0 5px 10px; background: #bdc3c7; }
+
+/***********RES************/
+
+.res #header-bottom-right {
+top: 200px !important;
+right: 6px;
+padding-left: 10px;
+}
+
+.res .RES-keyNav-activeElement {
+background-color: #f8f8f8!important;
+background: linear-gradient(to right,#fff 0%,#f8f8f8 8%,#f3f3f3 100%);
+border-right: 3px solid #D8D8D8;
+}
+
+.res #RESShortcutsEditContainer {
+padding: 3px 2px;
+}
+
+.res #RESShortcutsEditContainer {
+background: transparent;
+
+}
+
+.res #RESShortcutsAddFormContainer {
+top: 55px;
+}
+
+.res #RESShortcutsSort, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsAdd, .res #RESShortcutsTrash {
+background: none;
+}
+
+.RESDropdownList {
+top: 209px !important;
+right: 8px !important;
+background: #fff;
+width: 298px !important;
+border-radius: 0;
+border: 1px solid #ddd;
+}
+
+#RESAccountSwitcherDropdown {
+    left: auto !important;
+}
+
+.RESDropdownList li, .RESDropdownList a {
+border: none;
+color: #6f6e69;
+text-transform: uppercase;
+font-family: sans-serif;
+transition: 200ms;
+}
+
+.RESDropdownList li:hover {
+border-left: 5px solid #ed7577;
+background: #fff;
+color: #000;
+}
+
+.RESDropdownList li a {
+width: 100% !important;
+}
+
+.RESDropdownList li a:hover {
+background: #f4f4f4;
+color: #000;
+}
+
+#RESSearchMenuItem {
+background-color: #232323;
+border: 1px solid #232323;
+}
+
+#RESSearchMenuItem:hover {
+background-color: #fff !important;
+}
+
+#SettingsConsole:hover > #RESSearchMenuItem {
+background-color: #ddd;
+border: 1px solid #ddd;
+}
+
+#RESMainGearOverlay {
+top: 83px !important;
+left: auto !important;
+right: 105px !important;
+height: 25px !important;
+border-radius: 2px;
+display: none !important;
+}
+
+.gearIcon {
+border-radius: 2px;
+cursor: pointer;
+}
+
+.RESNotificationHeader .gearIcon {
+position: absolute;
+top: 6px;
+right: 45px;
+}
+
+.res .guider {
+box-shadow: none;
+border: 1px solid #ccc;
+border-radius: 2px;
+box-shadow: 0 0 5px #ccc;
+}
+
+.res .guider_button {
+background: #3498db;
+border: 1px solid #3498db;
+padding: 4px 8px;
+margin-top: 10px;
+}
+
+.res .guider_button:hover {
+opacity: .8;
+color: #fff;
+}
+
+.res span.subscribers {
+margin-top: -42px;
+z-index: 2147483646 !important
+}
+
+.res #userbarToggle {
+top: 0;
+height: 0px;
+min-height: 0;
+width: auto;
+padding: 13px 8px;
+background: transparent;
+border-radius: -2px;
+border: none;
+line-height: 0;
+color: transparent;
+}
+
+.res .res-navTop #userbarToggle.userbarShow, .res#userbarToggle.userbarShow {
+top: 0;
+right: -3px;
+left: auto;
+height: 0px;
+min-height: 0;
+width: auto;
+}
+
+.toggleButton {
+text-transform: lowercase;
+}
+
+.toggleOn:hover, .toggleOff:hover {
+background: #fff !important;
+color: #232323 !important;
+}
+
+.moduleToggle .toggleOn, .toggleButton .toggleOn {
+background-color: #2ecc71;
+color: #fff;
+border: none;
+line-height: 14px;
+}
+
+.moduleToggle .toggleOff, .toggleButton .toggleOff {
+background-color: #e74c3c;
+border: none;
+line-height: 14px;
+}
+
+/***********SUBMISSION PAGE***********/
+
+#text-desc:after{
+    padding: 20px 10px;
+    background-color: #d2c6b8;
+    border: 12px double #816055;
+    text-align:center;
+    border-radius: 5px;
+    overflow: auto;
+display:block;
+font-weight:bold;
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+color:#fff;
+width:500px;
+content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
+
+#link-desc:after{
+    padding: 20px 10px;
+    background-color: #d2c6b8;
+    border: 12px double #816055;
+    text-align:center;
+    border-radius: 5px;
+    overflow: auto;
+display:block;
+font-weight:bold;
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+color:#fff;
+content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
+
+#text-desc:after {
+    padding: 20px 10px;
+    background-color: #d2c6b8;
+    border: 12px double #816055;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #fff;
+    width: 665px;
+    content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice.";
+}
+.formtabs-content .infobar {
+    margin: 0;
+    padding: 5px;
+border-radius:5px;
+width:710px;
+border:none!important;
+}
+.roundfield {
+    width: 700px;
+    background-color: #d2c6b8;
+    border-radius: 4px;
+    padding: 5px 10px 10px 10px;
+    font-size: medium;
+}
+.submit_text h1 {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tabmenu.formtab .selected a {
+    color: white;
+    font-size: 100%;
+    background-color: #816055;
+    border: none!important;
+width:700px;
+}
+.formtabs-content {
+    width: 720px;
+    border-top: 10px solid #816055;
+    padding-top: 10px;
+}
+/***********LINK FLAIR***********/
+
+.linkflairlabel { margin-right: 0; padding: 0; }
+.linkflair-mod-post .title .linkflairlabel, .linkflair-review .title .linkflairlabel, .linkflair-the-more-you-know .title .linkflairlabel, .linkflair-question .title .linkflairlabel, .linkflair-swatches .title .linkflairlabel, .linkflair-hauls .title .linkflairlabel, .linkflair-fluff .title .linkflairlabel, .linkflair-discussion .title .linkflairlabel, .linkflair-business .title .linkflairlabel , .linkflair-glamday .title .linkflairlabel , .linkflair-discovery .title .linkflairlabel , .linkflair-roundup .title .linkflairlabel , .linkflair-deals .title .linkflairlabel , .linkflair-meetups .title .linkflairlabel , .linkflair-journal .title .linkflairlabel {
+
+position: absolute;
+top: 0;
+bottom: 0;
+content: " ";
+left: 0px;
+min-width: 10px;
+text-indent: -9999px;
+border: 0;
+border-radius: 0;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+
+.linkflair-mod-post .title .linkflairlabel { background: #f6b9bc; }
+.linkflair-review .title .linkflairlabel { background: #99e3eb; }
+.linkflair-question .title .linkflairlabel { background: #d0c0d5; }
+.linkflair-swatches .title .linkflairlabel { background: #fce9b4; }
+.linkflair-hauls .title .linkflairlabel { background: #31a081 }
+.linkflair-fluff .title .linkflairlabel { background: #b1e1c5; }
+.linkflair-discussion .title .linkflairlabel { background: #f8c5c8; }
+.linkflair-business .title .linkflairlabel { background: #e7bfd8; }
+.linkflair-glamday .title .linkflairlabel { background: #cc99ff; }
+.linkflair-discovery .title .linkflairlabel { background: #4dffc3; }
+.linkflair-roundup .title .linkflairlabel { background: #99ccff; }
+.linkflair-deals .title .linkflairlabel { background: #ff0066; }
+.linkflair-meetups .title .linkflairlabel { background: #3333ff; }
+.linkflair-journal .title .linkflairlabel { background: #751aff; }
+
+
+.listing-page .linkflair-mod-post:hover .title .linkflairlabel { background: #e21720; }
+.listing-page .linkflair-review:hover .title .linkflairlabel { background: #00B9CE; }
+.listing-page .linkflair-question:hover .title .linkflairlabel { background: #b196b9; }
+.listing-page .linkflair-swatches:hover .title .linkflairlabel { background: #f8b608; }
+.listing-page .linkflair-hauls:hover .title .linkflairlabel { background: #31a081; }
+.listing-page .linkflair-fluff:hover .title .linkflairlabel { background: #7dce9f; }
+.listing-page .linkflair-discussion:hover .title .linkflairlabel { background: #f18c92 }
+.listing-page .linkflair-business:hover .title .linkflairlabel { background: #D07FB1; }
+.listing-page .linkflair-glamday:hover .title .linkflairlabel { background: #cc99ff; }
+.listing-page .linkflair-discovery:hover .title .linkflairlabel { background: #4dffc3; }
+.listing-page .linkflair-roundup:hover .title .linkflairlabel { background: #99ccff; }
+.listing-page .linkflair-deals:hover .title .linkflairlabel { background: #ff0066; }
+.listing-page .linkflair-meetups:hover .title .linkflairlabel { background: #3333ff; }
+.listing-page .linkflair-journal:hover .title .linkflairlabel { background: #751aff; }
+
+.linkflair-mod-post .buttons:before, .linkflair-review .buttons:before, .linkflair-question .buttons:before, .linkflair-swatches .buttons:before, .linkflair-hauls .buttons:before, .linkflair-fluff .buttons:before, .linkflair-discussion .buttons:before, .linkflair-business .buttons:before , .linkflair-glamday .buttons:before , .linkflair-discovery .buttons:before , .linkflair-roundup .buttons:before , .linkflair-deals .buttons:before , .linkflair-meetups .buttons:before , .linkflair-journal .buttons:before {
+display: inline-block;
+padding: 1px 10px;
+color: #fff;
+text-transform: lowercase!important;
+margin-right: 10px;
+font-size: 85%;
+}
+
+.linkflair-mod-post .buttons:before { content: 'mod post'; background: #e21720; }
+.linkflair-review .buttons:before { content: 'review'; background: #00B9CE; }
+.linkflair-question .buttons:before { content: 'question'; background: #b196b9; }
+.linkflair-swatches .buttons:before { content: 'swatches'; background: #f8b608; }
+.linkflair-hauls .buttons:before { content: 'hauls'; background: #31a081; }
+.linkflair-fluff .buttons:before { content: 'fluff'; background: #7dce9f; }
+.linkflair-discussion .buttons:before { content: 'discussion'; background: #f18c92; }
+.linkflair-business .buttons:before { content: 'business'; background: #D07FB1; }
+.linkflair-glamday .buttons:before { content: 'glamday'; background: #cc99ff; }
+.linkflair-discovery .buttons:before { content: 'discovery'; background: #4dffc3; }
+.linkflair-roundup .buttons:before { content: 'roundup'; background: #99ccff; }
+.linkflair-deals .buttons:before { content: 'deals'; background: #ff0066; }
+.linkflair-meetups .buttons:before { content: 'meetups'; background: #3333ff; }
+.linkflair-journal .buttons:before { content: 'journal'; background: #751aff; }
+
+.linkflair-mod-post .linkflairlabel { background: #e21720; color: #fff; }
+.linkflair-review .linkflairlabel { background: #00B9CE; color: #fff; }
+.linkflair-question .linkflairlabel { background: #b196b9; color: #fff; }
+.linkflair-swatches .linkflairlabel { background: #f8b608; color: #fff; }
+.linkflair-Hauls .linkflairlabel { background: #31a081; color: #fff; }
+.linkflair-fluff .linkflairlabel { background: #7dce9f; color: #fff; }
+.linkflair-discussion .linkflairlabel { background: #f18c92; color: #fff; }
+.linkflair-business .linkflairlabel { background: #D07FB1; color: #fff; }
+.linkflair-glamday .linkflairlabel { background: #cc99ff; color: #fff; }
+.linkflair-discovery .linkflairlabel { background: #4dffc3; color: #fff; }
+.linkflair-roundup .linkflairlabel { background: #99ccff; color: #fff; }
+.linkflair-deals .linkflairlabel { background: #ff0066; color: #fff; }
+.linkflair-meetups .linkflairlabel { background: #3333ff; color: #fff; }
+.linkflair-journal .linkflairlabel { background: #751aff; color: #fff; }
+
+.flairselector .title:before { display: none; }
+
+.comments-page .linkflair-mod-post .title .linkflairlabel, .comments-page .linkflair-review .title .linkflairlabel, .comments-page .comments-page .linkflair-question .title .linkflairlabel, .comments-page .linkflair-swatches.title .linkflairlabel, .comments-page .linkflair-hauls .title .linkflairlabel, .comments-page .linkflair-fluff .title .linkflairlabel, .comments-page .linkflair-discussion .title .linkflairlabel, .comments-page .linkflair-business .title .linkflairlabel , .comments-page .linkflair-glamday .title .linkflairlabel, .comments-page .linkflair-discovery .title .linkflairlabel, .comments-page .linkflair-roundup .title .linkflairlabel, .comments-page .linkflair-deals .title .linkflairlabel, .comments-page .linkflair-meetups .title .linkflairlabel, .comments-page .linkflair-journal .title .linkflairlabel{
+left: 0px;
+}
+
+.link.last-clicked { border: 0; border-top: 1px solid #dee5e7;
+}
