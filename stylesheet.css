@@ -1,68 +1,374 @@
-/***********CUSTOM FLAIR FOR MODERATORS & USERS************/
+html {min-width: 848px; font-family: -apple-system,BlinkMacSystemFont,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif; color:#2a2b2d!important;}
+a:hover { text-decoration: none; color: #2a2b2d!important; transition: .2s;}
+.link { padding: 15px; background: none; border-radius: 0px; margin-right: 308px; position: relative;}
+.thing .title {color: #2a2b2d;}
+.thing .title:visited {color: #afadb8;}
 
-.author[href$="/thecakepie"]:after{color: #8a5460 !important; content: " captain mod"}
-.author[href$="/iamOshawott"]:after{color: #8a5460 !important; content: "  ༼ つ ◕_◕ ༽つ [retired mod]"}
-.author[href$="/AutoModerator"]:after{color: #8a5460 !important; content: " Oshawott's Bot"}
-.author[href$="/biibiibeauty"]:after{color: #8a5460 !important; content: " Wishtrend - Social Media Design"}
-.author[href$="/mishibox"]:after{color: #8a5460 !important; content: " MISHIBOX Representative"}
-.author[href$="/ellumina"]:after{color: #8a5460 !important; content: " Mod [currently on hiatus]"}
-.author[href$="/ashlaboo"]:after{color: #8a5460 !important; content: " a wild modboo (•ㅅ•❀) [retired mod]"}
-.author[href$="/Ronrinesu"]:after{color: #8a5460 !important; content: " Bird person / Bio nerd"}
-.author[href$="/kstoops2conquer"]:after{color: #8a5460 !important; content: " Friendly Grump "}
-.author[href$="/kitty_paw"]:after{color: #8a5460 !important; content: " Lurking Around"}
-.author[href$="/AsianBeautyMod"]:after{color: #8a5460 !important; content: " ~*~ umbrella mod account~*~ "}
-.author[href$="/petitoignon"]:after{color: #8a5460 !important; content: " Casual AB Evangelist + AutoMod Wrangler"}
-.author[href$="/starward-"]:after{color: #8a5460 !important; content: " Upside Down Mod"}
-.author[href$="/printf-username"]:after{color: #8a5460 !important; content: " neeeeeeeerd"}
-.author[href$="/tag_bitch"]:after{color: #8a5460 !important; content: " DM - Help Threads"}
-.author[href$="/pokepink"]:after{color: #8a5460 !important; content: " Graphic Designer"}
+/***HEADER***/
+.pagename a {
 
-
-/*PINK BLOGGER FLAIR FOR MODS*/
-.flair-MALL{
-visibility: visible;
+position: absolute;
+top:19px;
+bottom:25px;
+width:1080px;
+height:216px;
 text-indent: -9999px;
-border: none;
-background: url(%%43%%) no-repeat top left;
-width: 16px;
-height: 16px
 }
 
-.flair-blob{
-visibility: visible;
+
+#header {
+background: url(%%19911488-10110002544317880-1391553624-o%%);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 45%;
+height: 250px;
+-moz-box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #2a2b2d;
+margin:0px;
+padding:0;
+border-bottom:25px;
+width:100%;
+z-index:100;
+background-color:#afadb8;
+}
+
+/* FADE TRANSITION FOR HEADER HOVER */
+#header:hover::before {
+    opacity: 1;
+}
+
+#header::before {
+    background: url(%%20049295-10110002543709100-913715627-o%%);
+    background-color: #afadb8;
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    content: '';
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/*MOVE SNOO*/
+
+.pagename a, #header-img { position: absolute; z-index: -1; }
+
+#header-img {
+position: absolute;
+bottom: 0px;
+}
+
+#header-img.default-header {
 text-indent: -9999px;
+background-position: 0px -1323px;
+background-repeat: no-repeat;
+height: 40px;
+width: 120px;
+display: inline-block;
+vertical-align: bottom;
+margin-bottom: 3px;
+margin-left: 3px;
+}
+
+/***SR HEADER AREA / DROPDOWN LIST***/
+#header #sr-header-area {
+background:#ecd3d1;
 border: none;
-background: url(%%blob-upsidedown%%) no-repeat top left;
-width: 16px;
-height: 16px
+transition: all .15s ease;
+height: 24px;
+line-height: 23px;
+font-size:90%;
+white-space: nowrap;
+text-transform: lowercase;
+z-index:100;
+letter-spacing:1px;
 }
 
-.flair-MALL:hover {
-visibility: visible;
-width: auto !important;
-height: auto !important;
-text-indent: 0 !important;
-background-image: none !important;
-cursor: default;
-padding: 0 3px;
-background: #f0f0f0;
-color: #3e5267;
-border: 1px solid #aaa;
-border-radius: 2px;
-margin: 0 0 3px 0
+#sr-header-area .sr-list {
+overflow: hidden;
+}
+
+#sr-more-link {
+background-color:#ecd3d1;
+position: absolute;
+right: 0;
+top: 0;
+padding: 0 5px 0 15px;
+font-weight: 100;
+height:24px;
+}
+
+.sr-bar .separator {
+color: transparent;
+letter-spacing:5px;
+}
+
+.separator {
+color:transparent;
+}
+
+.sr-bar a {
+color:#ecd3d1;
+}
+
+.drop-choices {
+position: absolute;
+left: 0px;
+border: none;
+z-index: 100;
+background-color: #ecd3d1;
+white-space: nowrap;
+line-height: normal;
+margin-top: 1px;
+display: none;
+-moz-box-shadow: 0px 0px 10px #606368;
+-webkit-box-shadow: 0px 0px 10px #606368;
+box-shadow: 0px 0px 10px #606368;
+}
+.dropdown.srdrop .selected {
+background: none no-repeat scroll center right;
+display: inline-block;
+vertical-align: bottom;
+padding-right: 21px;
+padding-left: 5px;
+color: #2a2b2d;
+font-weight: normal;
+margin-left: -5px;
+margin-right: 10px;
+cursor: pointer;
+}
+a.choice {color:#000; letter-spacing:1px;}
+
+
+
+/****TAB MENU****/
+.tabmenu li.selected a { border: none; }
+.tabmenu li a { background: none; font-size: 12px; color: #68656c; font-weight:100; }
+.menuarea { padding: 5px 9px; border-bottom: none; font-size: 10px;}
+div#header-bottom-left ul.tabmenu { position: absolute; bottom: 6px; left: 110px; font-size: 10px; margin-left: 12px; }
+#header .tabmenu li a { color: #fff; background-color: none; }
+#header .tabmenu li.selected a { color: #ebd3d1; background-color: transparent; }
+
+
+
+/***USER MENU***/
+#header-bottom-right { position: bottom; right: 6px; bottom: 1px; background: transparent; font-size: 10px; width:auto; height:auto;}
+#header-bottom-right a { color: #fff; }
+.user {color: #fff;}
+
+
+
+/****SUBMIT BUTTONS****/
+.submit .morelink {
+background: #99dbd2;
+border: 0;
+float: left;
+width: 145px;
+line-height:40px;
+height:40px;
+font-weight:100;
+text-transform:lowercase;-moz-box-shadow: 0px 0px 10px #2a2b2d;
+-webkit-box-shadow: 0px 0px 10px #2a2b2d;
+box-shadow: 0px 0px 10px #2a2b2d;
+}
+
+.submit .morelink a {
+color: #2a2b2d;
+position:relative;
+width:140px;
+}
+
+.submit-text .morelink {
+margin-left: 10px;
+position:relative;
+width:140px;
+}
+.submit .morelink:hover {
+    background: #fff;
+}
+.submit .morelink:hover a {
+    color: #606368;
+}
+.submit .nub {
+    display: none;
+}
+body:not(.submit-page) .titlebox:before {
+    content: '';
+    display: block;
+    clear: left;
+    padding-top: 10px;
+}
+.submit-link .morelink:after {
+    content: 'OR';
+    position: absolute;
+    top: 0;
+    left: calc(100% - 10px);
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    color: #2a2b2d;
+    width: 30px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.submit:hover:before {
+    content: "Remember to flair your post! Posts without flairs will be removed.";
+    padding: 20px;
+    position: absolute;
+    display: block;
+    background-color: #99dbd2;
+    color: #fff;
+text-transform:lowercase;
+font-weight:bold;
+    z-index: 100;
+    line-height: 1.8em;
+    font-size: 12px;
+right:320px;
+width:200px;
+-moz-box-shadow: 0px 0px 10px #fff;
+-webkit-box-shadow: 0px 0px 10px #fff;
+box-shadow: 0px 0px 10px #fff;
 }
 
 
 
-/***********GENERAL SETTINGS************/
+/***********CHANGE SUBSCRIBER BUTTON COLOR***********/
+.fancy-toggle-button .add, .RESshortcutside, .RESDashboardToggle {
+font-size: 12px!important;
+padding:5px;
+font-weight:100;
+border: none!important;
+background-position: center;
+text-transform: lowercase;
+transition: .2s;
+background-image: none!important;
+background-color: #ebd3d1!important;
+color:#2a2b2d!important;
+border-radius:0px;
+-moz-box-shadow: 0px 0px 10px #fff;
+-webkit-box-shadow: 0px 0px 10px #fff;
+box-shadow: 0px 0px 10px #fff;
+}
 
-/*HIDE POST RANKINKS*/
+.fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove{
+font-size: 12px!important;
+padding:5px;
+font-weight:100!important;
+border: none!important;
+background-position: center;
+text-transform: lowercase;
+transition: .2s;
+background-image: none!important;
+background-color: #ebd3d1!important;
+color:#2a2b2d!important;
+border-radius:0px;
+-moz-box-shadow: 0px 0px 10px #fff;
+-webkit-box-shadow: 0px 0px 10px #fff;
+box-shadow: 0px 0px 10px #fff;
+}
+
+
+
+/***********SIDEBAR***********/
+.titlebox {
+background: #e6e5ed;
+border-bottom: 1px solid #ebd3d1;
+padding: 20px;
+margin-top:12px;
+float:right;}
+
+.titlebox .redditname {
+}
+
+.titlebox h1 a:before{
+content:'';
+}
+
+.titlebox h1 a:after {
+content:'';
+}
+
+.titlebox .usertext .md > h2 {
+background-color: #9bdbd2;
+border:none;
+color: #2a2b2d;
+text-transform:lowercase;
+font-weight:100;
+margin: 15px -23px 15px -23px;
+padding: 5px 0 5px 12px;
+font-size:18px;
+cursor: pointer; line-height:30px;
+-moz-box-shadow: 0px 0px 10px #fff;
+-webkit-box-shadow: 0px 0px 10px #fff;
+box-shadow: 0px 0px 10px #fff;}
+
+.titlebox .usertext .md > h2::after {
+content: "";
+display: block;
+height: 0;
+margin-left: -35px;
+margin-top: -10px;
+position: absolute;
+z-index: 1;
+cursor: pointer;
+color:#2a2b2d;}
+
+
+.md a {
+color: #0abab5;
+text-decoration: none;
+}
+
+.titlebox form.toggle, .leavemoderator {
+margin: 0;
+padding: 5px 0px;
+font-size: smaller;
+background-color:#e6e5ed;
+color:#2a2b2d;
+}
+
+
+
+/***CREDITS***/
+.titlebox .bottom { color:#2a2b2d; margin: 20px 0; font-size: 0px; cursor: text; border-top: 1px solid #2a2b2d; }
+.titlebox .bottom::before { font-size: 10px; content: "graphics and css by "; }
+.titlebox .bottom::after { font-size: 10px; color: #2a2b2d; cursor: pointer; content: "pokepink & fjordling_, with help from beelzeybob";}
+
+
+
+/***READERS***/
+.subscribers .word {
+display: none;
+}
+.subscribers .number::after {
+content: " snail addicts";
+}
+
+.users-online .word {
+display: none;
+}
+.users-online .number::after {
+content: " currently sheet masking";
+}
+
+
+
+/****HIDE POST RANKINKS****/
 .rank { display: none; }
 
 
-/*DOWNVOTE CHASTISEMENT*/
+
+
+/****DOWNVOTE CHASTISEMENT****/
 .midcol {
-padding: 10px;
+padding-right: 10px;
 }
 
 .link .midcol {
@@ -76,412 +382,132 @@ display: block;
 z-index: 1000;
 width: 200px;
 padding: 2px;
-background-color: #8a5460;
-border-radius:5px;
+background-color: #ebd3d1;
+border-radius:0px;
 content: "Please reconsider before downvoting; this is not a disagree button.";
 text-align: center;
 font-size: 12px;
 font-weight: normal;
 margin-left: 2px;
 margin-top: 22px;
-box-shadow: 1px 1px 5px #816055;
+box-shadow: 1px 1px 5px #2a2b2d;
 text-transform:lowercase;
-color:#FFFFFF;
+color:#2a2b2d;
 }
 
-/*CREDITS*/
-.titlebox .bottom { margin: 20px 0; font-size: 0px; cursor: text; border-top: 1px solid #dee5e7; }
-.titlebox .bottom::before { font-size: 10px; content: "css & designs by "; padding-left: 10px; }
-.titlebox .bottom::after { font-size: 10px; color: #369; cursor: pointer; content: "iamoshawott & MissPicklesMeow"; }
-.titlebox .bottom .author[href$="/iamoshawott"]:after { display: none; }
-.titlebox .bottom .author[href$="/MissPicklesMeow"]:after { display: none; }
 
-/***********SUB HEADER************/
-.pagename a {
-background: url(%%AsianBeauty-BANNER%%);
-position: absolute;
-top:19px;
-bottom:25px;
-width:1080px;
-height:216px;
-text-indent: -9999px;
+
+/****STICKIED****/
+.thing.stickied.link a.title {
+font-weight: bold;
+color: #2a2b2d;
 }
 
-#header-bottom-left {
-top:25px;
-background-color: #ffffff;
-}
 
-#header {
-
-height: 250px;
--moz-box-shadow: 0px 0px 10px #000;
--webkit-box-shadow: 0px 0px 10px #000;
-box-shadow: 0px 0px 10px #816055;
-margin:0px;
-padding:0;
-border-bottom:25px;
-width:100%;
-z-index:100;
-background-color:#ffffff;
-}
-
-.titlebox h1 a {
-text-indent: -9999em;
-display: block;
-height: 70px;
-
-width: 257px;
-margin: 0 auto;
-}
-
-/*MOVE SNOO*/
-
-.pagename a, #header-img { position: absolute; z-index: 1; }
-
-#header-img {
-position: absolute;
-bottom: 0px;
-}
-
-#header-img.default-header {
-    text-indent: -9999px;
-    background-position: 0px -1323px;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 35px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-bottom: 3px;
-margin-left: 3px;
-}
-
-/***********BACKGROUND************/
-
-html { min-width: 848px; }
-
-a { color: #816055; }
-
-a:hover { text-decoration: none; color: #d2c6b8!important;     transition: .5s;
-}
-
-.link { padding: 15px; background: none; border-radius: 0px; margin-right: 308px; position: relative; }
-.md a {
-    color: #816055;
-    text-decoration: none;
-}
-.thing .title {
-    color: #816055;
-}
-.thing .title:visited {
-    color: #d2c6b8;
-}
-
-/***********TAB MENU*************/
-
-.tabmenu li.selected a { border: none; }
-
-.tabmenu li a { background: none; font-size: 10px; color: #8a5460; }
-
-.menuarea { padding: 5px 9px; border-bottom: none; font-size: 10px; }
-
-div#header-bottom-left ul.tabmenu { position: absolute; bottom: 6px; left: 120px; text-transform: lowercase!important; font-size: 10px; margin-left: 12px; }
-
-#header .tabmenu li a { color: #816055; background-color: #none; }
-#header .tabmenu li.selected a { color: #d2c6b8; background-color: #none; }
-
-
-/***********USER MENU************/
-
-#header-bottom-right { position: absolute; right: 6px; bottom: 1px; background: transparent; font-size: 10px; }
-
-#header-bottom-right a { color: #8a5460; }
-
-
-/***********SUBMIT BUTTONS***********/
-
-.morelink .nub {
-display: none;
-
-}
-.morelink a {
-    border-radius: 5px;
-    background: #d2c6b8;
-    color: #FFF;
-text-transform: lowercase;
-line-height:40px;
-height:40px;
-border: none!important;
-}
-.morelink {
-    border: none;
-margin-bottom:5px;
-}
-.submit-text {
-margin-top: 20px;
-}
-
-/***********USER MAIL***********/
-
-#mail.havemail {
-background-image:url(%%MAIL%%);
-background-position:0px 0px;
-}
-
-#mail.nohavemail {
-background-image:url(%%NOMAIL%%);
-background-position:0px 0px;
-}
-
-/***********MOD MAIL************/
-
-#modmail.havemail {
-background-image:url(%%MODMAIL%%);
-background-position:4px 4px;
-}
-
-#modmail.nohavemail {
-background-image:url(%%NOMODMAIL%%);
-background-position:4px 4px;
-}
-
-/***********CHANGE SUBSCRIBER BUTTON COLOR***********/
-.fancy-toggle-button .add, .RESshortcutside, .RESDashboardToggle {
-font-size: 9px!important;
-    border: none!important;
-background-position: center;
-    text-transform: lowercase;
-    transition: .2s;
-    background-image: none!important;
-background-color: #8a5460!important;
-
-}
-
-.fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove{
-font-size: 9px!important;
-    border: none!important;
-background-position: center;
-    text-transform: lowercase;
-    transition: .2s;
-    background-image: none!important;
-background-color:#d2c6b8!important;
-}
-
-/***********SIDEBAR***********/
-
-.titlebox {
-background: #ffffff;
-border-bottom: 1px solid #d2c6b8;
-border-radius: 5px;
-padding: 10px;
-
-}
-
-h1.hover.redditname {
-background-repeat:no-repeat;
-margin-top:-50px;
-}
-
-.titlebox .md {
-color: #000000;
-overflow: visible; }
-
-.titlebox .usertext .md > h2 {
-background-color: #8a5460;
-border:none;
-border-radius:5px;
-color: white;
-text-transform:lowercase;
-font-weight:bold;
-margin: 5px -14px 5px -14px;
-padding: 5px 0 5px 12px;
-font-size:15px;
-cursor: pointer; line-height:30px;
-}
-
-.titlebox .usertext .md > h2::after {
-border-color: transparent #987417 transparent transparent;
-border-style: solid;
-border-width: 0px;
-content: "";
-display: block;
-height: 0;
-margin-left: -35px;
-margin-top: -10px;
-position: absolute;
-width: 0;
-z-index: -1;
-cursor: pointer; }
-
-
-
-/***********THUMBNAILS AND POSTS************/
-
-.thumbnail.self {
-background-position: 1;
-
-}
-
-.stickied a.thumbnail {
-}
-
-.stickied .title {
-color: #8a5460!important;
-}
-
-.stickied-tagline {
-color: #8a5460!important;
-}
-
-/***SEARCH***/
-#search input[type=text] {
-    height: 40px;
-border-radius:5px;
-}
-input[type=text], #search input[type=text], .combined-search-page #search input[type=text], #editShortcutDialog input[type=text], .pretty-form input[type=text], .linkinfo .shortlink input, .linefield input[type=text], .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .login-form-side input[type=text], .login-form-side input[type=password], textarea, .pretty-form textarea, .c-form-control, input[type=checkbox], input[type=radio], .res .side h1.redditname+div:before, select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    box-shadow: none;
-    border: 1px 816055;
-    border-radius: 5px;
-    background-color: FFF;
-    color: #000;
-}
-#search input[type=text] {
-    border: 1px 816055;
-    font-size: 13px;
-    font-family: verdana;
-    width: 300px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 6px;
-    padding-right: 25px;
-    padding-left: 9px;
-    vertical-align: middle;}
-input[type="checkbox" i] {
-    -webkit-appearance: checkbox;
-    box-sizing: border-box;
-}
-user agent stylesheet
-input[type="radio" i], input[type="checkbox" i] {
-    background-color: initial;
-    margin: 3px 0.5ex;
-    padding: initial;
-    border: initial;
-}
+/****SEARCH BAR****/
 .infobar {
-    background-color: #d2c6b8;
-    border-color: #816055;
-    border-style: solid;
-    border-width: 1px;
-    font-size: small;
-    margin: 5px 305px 5px 0px;
-    padding: 5px 10px;
+background-color: #afadb8;
+border-color: #afadb8;
+color:#2a2b2d;
+border-style: solid;
+border-width: 1px;
+font-size: small;
+margin: 5px 305px 5px 0px;
+padding: 5px 10px;
 }
 
 
-/***********BLOGGER FLAIR***********/
 
-.flair-MAL{
-visibility: visible;
-text-indent: -9999px;
-border: none;
-background: url(%%33%%) no-repeat top left;
-width: 16px;
-height: 16px
+/***BODY***/
+.entry .tagline {
+margin-top: 3px;
+color: #afadb8;
+}
+.tagline .moderator, .green, .search-result-meta .moderator {
+color: #0abab5;
+font-weight:bold;
 }
 
-.flair-MAL:hover {
-visibility: visible;
-width: auto !important;
-height: auto !important;
-text-indent: 0 !important;
-background-image: none !important;
-cursor: default;
-padding: 0 3px;
-background: #f0f0f0;
-color: #3e5267;
-border: 1px solid #aaa;
-border-radius: 2px;
-margin: 0 0 3px 0
+
+/***********SUBMISSION PAGE***********/
+#text-desc:after{
+padding: 20px 10px;
+background-color: #afadb8;
+border: 12px solid #ebd3d1;
+text-align:center;
+border-radius: 5px;
+overflow: auto;
+display:block;
+font-weight:100;
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+color:#2a2b2d;
+content: "Please review our posting guidelines in the sidebar before submitting a post. Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
+
+#link-desc:after{
+padding: 20px 10px;
+background-color: #afadb8;
+border: 12px solid #ebd3d1;
+text-align:center;
+overflow: auto;
+display:block;
+font-weight:100;
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+color:#2a2b2d;
+content: "Please review our posting guidelines in the sidebar before submitting a post. Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
+
+.formtabs-content .infobar {
+margin: 0;
+padding: 5px;
+border-radius:5px;
+border:none!important;
 }
-
-/***MAIN PAGE***/
-.sitetable {
-    list-style-type: none;
+.roundfield {
+background-color: #afadb8;
+border-radius: 4px;
+padding: 5px 10px 10px 10px;
+font-size: medium;
 }
-.thing {
-border-bottom: 1px solid #8a5460;
-}
-
-.midcol {
-    float: left;
-    margin-right: 7px;
-    margin-left: 7px;
-margin-top: -10px;
-    background: transparent;
-    overflow: hidden;
-}
-
-/***********LINK FLAIR FILTER***********/
-
-html:lang(qu) .linkflair-question {
-display: none    }
-html:lang(sw) .linkflair-swatches {
-display: none    }
-html:lang(bs) .linkflair-business {
-display: none    }
-html:lang(di) .linkflair-discovery {
-display: none    }
-html:lang(ro) .linkflair-meetups {
-display: none    }
-html:lang(ro) .linkflair-journal {
-display: none    }
-html:lang(al) .linkflair-question, html:lang(al) .linkflair-swatches, html:lang(al) .linkflair-hauls, html:lang(al) .linkflair-business, html:lang(al) .linkflair-fluff {
-display: none    }
-
-.side a[href*='mod-post'], .side a[href*='review'], .side a[href*='question'], .side a[href*='swatches'], .side a[href*='discussion'], .side a[href*='business'], .side a[href*='fluff'], .side a[href*='discovery'], .side a[href*='meetups'], .side a[href*='journal'], a[href*='#mp'], .side a[href*='#re'], .side a[href*='#ps'], .side a[href*='#qu'], .side a[href*='#sw'], .side a[href*='#ha'], .side a[href*='#di'], .side a[href*='#mp'], .side a[href*='#bs'], .side a[href*='#fl'], .side a[href*='#al'], .side a[href="http://goo.gl/9jxY49"]{
-display: inline-block;
-position: relative;
-width: 92px;
-text-align: center;
-font-size: 75%;
-padding: 3px 10px;
+.submit_text h1 {
 color: #fff;
-background: #bdc3c7;
+display: block;
+font-size: 16px;
+font-weight: bold;
+}
+.tabmenu.formtab .selected a {
+    color: white;
+    font-size: 100%;
+    background-color: #afadb8;
+    border: none!important;
+}
+.formtabs-content {
+    border-top: 10px solid #afadb8!important;
+    padding-top: 10px;
 }
 
-.side a[href*='mod-post'] { margin: 0 0 5px 30px; background: #e21720; }
-.side a[href*='review'] { margin: 0 0 5px 10px; background: #00b9ce; }
-.side a[href*='question'] { margin: 0 0 5px 30px; background: #b196b9; }
-.side a[href*='swatches'] { margin: 0 0 5px 10px; background: #f1c40f; }
-.side a[href*='discussion'] { margin: 0 0 5px 30px; background: #f18c92; }
-.side a[href*='business'] { margin: 0 0 5px 10px; background: #d07fb1; }
-.side a[href*='discovery'] { margin: 0 0 5px 30px; background: #4dffc3; }
-.side a[href*='meetups'] { margin: 0 0 5px 10px; background: #3333ff; }
-.side a[href*='journal'] { margin: 0 0 5px 30px; background: #751aff; }
-.side a[href='http://goo.gl/9jxY49'] { margin:0 0 5px 10px; background: #bdc3c7; }
 
-.side a[href*='#qu'] { margin: 0 0 5px 30px; background: #b196b9; }
-.side a[href*='#sw'] { margin: 0 0 5px 10px; background: #f1c40f; }
-.side a[href*='#ha'] { margin: 0 0 5px 30px; background: #31a081; }
-.side a[href*='#bs'] { margin: 0 0 5px 10px; background: #d07fb1; }
-.side a[href*='#fl'] { margin: 0 0 5px 30px; background: #7dce9f; }
-.side a[href*='#al'] { margin:0 0 5px 10px; background: #bdc3c7; }
+
+
+
+
 
 /***********RES************/
 
 .res #header-bottom-right {
-top: 200px !important;
 right: 6px;
+top: 215px;
 padding-left: 10px;
+background-color: #afadb8;
+height: 28px;
 }
 
 .res .RES-keyNav-activeElement {
-background-color: #f8f8f8!important;
-background: linear-gradient(to right,#fff 0%,#f8f8f8 8%,#f3f3f3 100%);
-border-right: 3px solid #D8D8D8;
+background-color: #fff!important;
+background: linear-gradient(to right,#fff 0%,#f8f8f8 8%,#fff 100%);
+border-right: 3px solid #000;
 }
 
 .res #RESShortcutsEditContainer {
@@ -502,7 +528,7 @@ background: none;
 }
 
 .RESDropdownList {
-top: 209px !important;
+top: 250px !important;
 right: 8px !important;
 background: #fff;
 width: 298px !important;
@@ -516,7 +542,8 @@ border: 1px solid #ddd;
 
 .RESDropdownList li, .RESDropdownList a {
 border: none;
-color: #6f6e69;
+color: #fff;
+background:#fff;
 text-transform: uppercase;
 font-family: sans-serif;
 transition: 200ms;
@@ -533,13 +560,13 @@ width: 100% !important;
 }
 
 .RESDropdownList li a:hover {
-background: #f4f4f4;
+background: #fff;
 color: #000;
 }
 
 #RESSearchMenuItem {
-background-color: #232323;
-border: 1px solid #232323;
+background-color: #fff;
+border: 1px solid #fff;
 }
 
 #RESSearchMenuItem:hover {
@@ -547,8 +574,8 @@ background-color: #fff !important;
 }
 
 #SettingsConsole:hover > #RESSearchMenuItem {
-background-color: #ddd;
-border: 1px solid #ddd;
+background-color: #fff;
+border: 1px solid #fff;
 }
 
 #RESMainGearOverlay {
@@ -579,8 +606,8 @@ box-shadow: 0 0 5px #ccc;
 }
 
 .res .guider_button {
-background: #3498db;
-border: 1px solid #3498db;
+background: #fff;
+border: 1px solid #000;
 padding: 4px 8px;
 margin-top: 10px;
 }
@@ -599,7 +626,7 @@ z-index: 2147483646 !important
 top: 0;
 height: 0px;
 min-height: 0;
-width: auto;
+width: 300px;
 padding: 13px 8px;
 background: transparent;
 border-radius: -2px;
@@ -623,107 +650,27 @@ text-transform: lowercase;
 
 .toggleOn:hover, .toggleOff:hover {
 background: #fff !important;
-color: #232323 !important;
 }
 
 .moduleToggle .toggleOn, .toggleButton .toggleOn {
-background-color: #2ecc71;
+background-color: #fff;
 color: #fff;
 border: none;
 line-height: 14px;
 }
 
 .moduleToggle .toggleOff, .toggleButton .toggleOff {
-background-color: #e74c3c;
+background-color: #fff;
 border: none;
 line-height: 14px;
 }
 
-/***********SUBMISSION PAGE***********/
 
-#text-desc:after{
-    padding: 20px 10px;
-    background-color: #d2c6b8;
-    border: 12px double #816055;
-    text-align:center;
-    border-radius: 5px;
-    overflow: auto;
-display:block;
-font-weight:bold;
-margin-top: 5px;
-margin-bottom: 10px;
-font-size: 15px;
-color:#fff;
-width:500px;
-content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
 
-#link-desc:after{
-    padding: 20px 10px;
-    background-color: #d2c6b8;
-    border: 12px double #816055;
-    text-align:center;
-    border-radius: 5px;
-    overflow: auto;
-display:block;
-font-weight:bold;
-margin-top: 5px;
-margin-bottom: 10px;
-font-size: 15px;
-color:#fff;
-content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice."}
-
-#text-desc:after {
-    padding: 20px 10px;
-    background-color: #d2c6b8;
-    border: 12px double #816055;
-    text-align: center;
-    border-radius: 5px;
-    overflow: auto;
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #fff;
-    width: 665px;
-    content: "Please review our posting guidelines here: https://www.reddit.com/r/AsianBeauty/wiki/postguidelines Anything that doesn't follow our guidelines will be subject to automatic removal with no notice.";
-}
-.formtabs-content .infobar {
-    margin: 0;
-    padding: 5px;
-border-radius:5px;
-width:710px;
-border:none!important;
-}
-.roundfield {
-    width: 700px;
-    background-color: #d2c6b8;
-    border-radius: 4px;
-    padding: 5px 10px 10px 10px;
-    font-size: medium;
-}
-.submit_text h1 {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-}
-.tabmenu.formtab .selected a {
-    color: white;
-    font-size: 100%;
-    background-color: #816055;
-    border: none!important;
-width:700px;
-}
-.formtabs-content {
-    width: 720px;
-    border-top: 10px solid #816055;
-    padding-top: 10px;
-}
 /***********LINK FLAIR***********/
 
 .linkflairlabel { margin-right: 0; padding: 0; }
-.linkflair-mod-post .title .linkflairlabel, .linkflair-review .title .linkflairlabel, .linkflair-the-more-you-know .title .linkflairlabel, .linkflair-question .title .linkflairlabel, .linkflair-swatches .title .linkflairlabel, .linkflair-hauls .title .linkflairlabel, .linkflair-fluff .title .linkflairlabel, .linkflair-discussion .title .linkflairlabel, .linkflair-business .title .linkflairlabel , .linkflair-glamday .title .linkflairlabel , .linkflair-discovery .title .linkflairlabel , .linkflair-roundup .title .linkflairlabel , .linkflair-deals .title .linkflairlabel , .linkflair-meetups .title .linkflairlabel , .linkflair-journal .title .linkflairlabel {
+.linkflair-mod-post .title .linkflairlabel, .linkflair-review .title .linkflairlabel, .linkflair-discussion .title .linkflairlabel, .linkflair-business .title .linkflairlabel , .linkflair-deals .title .linkflairlabel , .linkflair-meetups .title .linkflairlabel , .linkflair-news .title .linkflairlabel , .linkflair-fotd .title .linkflairlabel , .linkflair-research .title .linkflairlabel , .linkflair-oc .title .linkflairlabel {
 
 position: absolute;
 top: 0;
@@ -741,38 +688,31 @@ border-radius: 0;
 transition: all .3s ease;
 }
 
-.linkflair-mod-post .title .linkflairlabel { background: #f6b9bc; }
-.linkflair-review .title .linkflairlabel { background: #99e3eb; }
-.linkflair-question .title .linkflairlabel { background: #d0c0d5; }
-.linkflair-swatches .title .linkflairlabel { background: #fce9b4; }
-.linkflair-hauls .title .linkflairlabel { background: #31a081 }
-.linkflair-fluff .title .linkflairlabel { background: #b1e1c5; }
-.linkflair-discussion .title .linkflairlabel { background: #f8c5c8; }
-.linkflair-business .title .linkflairlabel { background: #e7bfd8; }
-.linkflair-glamday .title .linkflairlabel { background: #cc99ff; }
-.linkflair-discovery .title .linkflairlabel { background: #4dffc3; }
-.linkflair-roundup .title .linkflairlabel { background: #99ccff; }
-.linkflair-deals .title .linkflairlabel { background: #ff0066; }
-.linkflair-meetups .title .linkflairlabel { background: #3333ff; }
-.linkflair-journal .title .linkflairlabel { background: #751aff; }
+.linkflair-mod-post .title .linkflairlabel { background: #f6b9bc; } k
+.linkflair-review .title .linkflairlabel { background: #99e3eb; } k
+.linkflair-discussion .title .linkflairlabel { background: #d0c0d5; } k
+.linkflair-business .title .linkflairlabel { background: #fce9b4; } k
+.linkflair-deals .title .linkflairlabel { background: #ff87bc; } k
+.linkflair-meetups .title .linkflairlabel { background: #d0b8c7; } k
+.linkflair-news .title .linkflairlabel { background: #b7ffe7; } k
+.linkflair-fotd .title .linkflairlabel { background: #c0c0ff; } k
+.linkflair-research .title .linkflairlabel { background: #cc99ff; } k
+.linkflair-oc .title .linkflairlabel { background: #9dccd0; }
 
 
 .listing-page .linkflair-mod-post:hover .title .linkflairlabel { background: #e21720; }
 .listing-page .linkflair-review:hover .title .linkflairlabel { background: #00B9CE; }
-.listing-page .linkflair-question:hover .title .linkflairlabel { background: #b196b9; }
-.listing-page .linkflair-swatches:hover .title .linkflairlabel { background: #f8b608; }
-.listing-page .linkflair-hauls:hover .title .linkflairlabel { background: #31a081; }
-.listing-page .linkflair-fluff:hover .title .linkflairlabel { background: #7dce9f; }
-.listing-page .linkflair-discussion:hover .title .linkflairlabel { background: #f18c92 }
-.listing-page .linkflair-business:hover .title .linkflairlabel { background: #D07FB1; }
-.listing-page .linkflair-glamday:hover .title .linkflairlabel { background: #cc99ff; }
-.listing-page .linkflair-discovery:hover .title .linkflairlabel { background: #4dffc3; }
-.listing-page .linkflair-roundup:hover .title .linkflairlabel { background: #99ccff; }
+.listing-page .linkflair-discussion:hover .title .linkflairlabel { background: #b196b9; }
+.listing-page .linkflair-business:hover .title .linkflairlabel { background: #f8b608; }
 .listing-page .linkflair-deals:hover .title .linkflairlabel { background: #ff0066; }
-.listing-page .linkflair-meetups:hover .title .linkflairlabel { background: #3333ff; }
-.listing-page .linkflair-journal:hover .title .linkflairlabel { background: #751aff; }
+.listing-page .linkflair-meetups:hover .title .linkflairlabel { background: #d07fb1; }
+.listing-page .linkflair-news:hover .title .linkflairlabel { background: #4dffc3}
+.listing-page .linkflair-fotd:hover .title .linkflairlabel { background: #7b7bff; }
+.listing-page .linkflair-research:hover .title .linkflairlabel { background: #751aff; }
+.listing-page .linkflair-oc:hover .title .linkflairlabel { background: #4dc5d0; }
 
-.linkflair-mod-post .buttons:before, .linkflair-review .buttons:before, .linkflair-question .buttons:before, .linkflair-swatches .buttons:before, .linkflair-hauls .buttons:before, .linkflair-fluff .buttons:before, .linkflair-discussion .buttons:before, .linkflair-business .buttons:before , .linkflair-glamday .buttons:before , .linkflair-discovery .buttons:before , .linkflair-roundup .buttons:before , .linkflair-deals .buttons:before , .linkflair-meetups .buttons:before , .linkflair-journal .buttons:before {
+
+.linkflair-mod-post .buttons:before, .linkflair-review .buttons:before, .linkflair-discussion .buttons:before, .linkflair-business .buttons:before, .linkflair-deals .buttons:before, .linkflair-meetups .buttons:before, .linkflair-news .buttons:before, .linkflair-fotd .buttons:before , .linkflair-research .buttons:before , .linkflair-oc .buttons:before {
 display: inline-block;
 padding: 1px 10px;
 color: #fff;
@@ -782,40 +722,288 @@ font-size: 85%;
 }
 
 .linkflair-mod-post .buttons:before { content: 'mod post'; background: #e21720; }
-.linkflair-review .buttons:before { content: 'review'; background: #00B9CE; }
-.linkflair-question .buttons:before { content: 'question'; background: #b196b9; }
-.linkflair-swatches .buttons:before { content: 'swatches'; background: #f8b608; }
-.linkflair-hauls .buttons:before { content: 'hauls'; background: #31a081; }
-.linkflair-fluff .buttons:before { content: 'fluff'; background: #7dce9f; }
-.linkflair-discussion .buttons:before { content: 'discussion'; background: #f18c92; }
-.linkflair-business .buttons:before { content: 'business'; background: #D07FB1; }
-.linkflair-glamday .buttons:before { content: 'glamday'; background: #cc99ff; }
-.linkflair-discovery .buttons:before { content: 'discovery'; background: #4dffc3; }
-.linkflair-roundup .buttons:before { content: 'roundup'; background: #99ccff; }
+.linkflair-review .buttons:before { content: 'reviews and swatches'; background: #00B9CE; }
+.linkflair-discussion .buttons:before { content: 'discussion'; background: #b196b9; }
+.linkflair-business .buttons:before { content: 'business'; background: #f8b608; }
 .linkflair-deals .buttons:before { content: 'deals'; background: #ff0066; }
-.linkflair-meetups .buttons:before { content: 'meetups'; background: #3333ff; }
-.linkflair-journal .buttons:before { content: 'journal'; background: #751aff; }
+.linkflair-meetups .buttons:before { content: 'meetups'; background: #d07fb1; }
+.linkflair-news .buttons:before { content: 'news'; background: #4dffc3; }
+.linkflair-fotd .buttons:before { content: 'fotd'; background: #7b7bff; }
+.linkflair-research .buttons:before { content: 'research'; background: #751aff; }
+.linkflair-oc .buttons:before { content: 'original content'; background: #4dc5d0; }
 
 .linkflair-mod-post .linkflairlabel { background: #e21720; color: #fff; }
-.linkflair-review .linkflairlabel { background: #00B9CE; color: #fff; }
-.linkflair-question .linkflairlabel { background: #b196b9; color: #fff; }
-.linkflair-swatches .linkflairlabel { background: #f8b608; color: #fff; }
-.linkflair-Hauls .linkflairlabel { background: #31a081; color: #fff; }
-.linkflair-fluff .linkflairlabel { background: #7dce9f; color: #fff; }
-.linkflair-discussion .linkflairlabel { background: #f18c92; color: #fff; }
-.linkflair-business .linkflairlabel { background: #D07FB1; color: #fff; }
-.linkflair-glamday .linkflairlabel { background: #cc99ff; color: #fff; }
-.linkflair-discovery .linkflairlabel { background: #4dffc3; color: #fff; }
-.linkflair-roundup .linkflairlabel { background: #99ccff; color: #fff; }
-.linkflair-deals .linkflairlabel { background: #ff0066; color: #fff; }
-.linkflair-meetups .linkflairlabel { background: #3333ff; color: #fff; }
-.linkflair-journal .linkflairlabel { background: #751aff; color: #fff; }
+.linkflair-review .linkflairlabel { background: #85c7ce; color: #fff; }
+.linkflair-discussion .linkflairlabel { background: #d0c0d5; color: #fff; }
+.linkflair-business .linkflairlabel { background: #f8b608; color: #fff; }
+.linkflair-deals .linkflairlabel { background: #ff87bc; color: #fff; }
+.linkflair-meetups .linkflairlabel { background: #d0b8c7; color: #fff; }
+.linkflair-news .linkflairlabel { background: #b7ffe7; color: #fff; }
+.linkflair-fotd .linkflairlabel { background: #c0c0ff; color: #fff; }
+.linkflair-research .linkflairlabel { background: #cc99ff; color: #fff; }
+.linkflair-oc .linkflairlabel { background: #9dccd0; color: #fff; }
+
 
 .flairselector .title:before { display: none; }
 
-.comments-page .linkflair-mod-post .title .linkflairlabel, .comments-page .linkflair-review .title .linkflairlabel, .comments-page .comments-page .linkflair-question .title .linkflairlabel, .comments-page .linkflair-swatches.title .linkflairlabel, .comments-page .linkflair-hauls .title .linkflairlabel, .comments-page .linkflair-fluff .title .linkflairlabel, .comments-page .linkflair-discussion .title .linkflairlabel, .comments-page .linkflair-business .title .linkflairlabel , .comments-page .linkflair-glamday .title .linkflairlabel, .comments-page .linkflair-discovery .title .linkflairlabel, .comments-page .linkflair-roundup .title .linkflairlabel, .comments-page .linkflair-deals .title .linkflairlabel, .comments-page .linkflair-meetups .title .linkflairlabel, .comments-page .linkflair-journal .title .linkflairlabel{
+.comments-page .linkflair-mod-post .title .linkflairlabel, .comments-page .linkflair-review .title .linkflairlabel, .comments-page .comments-page .linkflair-discussion .title .linkflairlabel, .comments-page .linkflair-business.title .linkflairlabel, .comments-page .linkflair-deals .title .linkflairlabel, .comments-page .linkflair-meetups .title .linkflairlabel, .comments-page .linkflair-news .title .linkflairlabel, .comments-page .linkflair-fotd .title .linkflairlabel , .comments-page .linkflair-research .title .linkflairlabel, .comments-page .linkflair-oc .title .linkflairlabel {
 left: 0px;
 }
 
 .link.last-clicked { border: 0; border-top: 1px solid #dee5e7;
 }
+
+/***********LINK FLAIR FILTER***********/
+
+html:lang(mo) .linkflair-mod-post {
+display: none    }
+html:lang(re) .linkflair-review {
+display: none    }
+html:lang(di) .linkflair-discussion {
+display: none    }
+html:lang(bs) .linkflair-business {
+display: none    }
+html:lang(ds) .linkflair-deals {
+display: none    }
+html:lang(ms) .linkflair-meetups {
+display: none    }
+html:lang(nw) .linkflair-news,
+html:lang(fo) .linkflair-fotd,
+html:lang(rs) .linkflair-research,
+html:lang(oc) .linkflair-oc {
+display: none    }
+
+.side a[href*='mod-post'],
+.side a[href*='review'],
+.side a[href*='discussion'],
+.side a[href*='business'],
+.side a[href*='deals'],
+.side a[href*='meetups'],
+.side a[href*='news'],
+.side a[href*='fotd'],
+.side a[href*='research'],
+.side a[href*='oc'],
+.side a[href*='#mo'],
+.side a[href*='#re'],
+.side a[href*='#di'],
+.side a[href*='#bs'],
+.side a[href*='#ds'],
+.side a[href*='#ms'],
+.side a[href*='#nw'],
+.side a[href*='#fo'],
+.side a[href*='#rs'],
+.side a[href*='#oc'],
+.side a[href="http://goo.gl/9jxY49"]
+{
+display: inline-block;
+position: relative;
+width: 92px;
+text-align: center;
+font-size: 75%;
+padding: 3px 10px;
+color: #fff;
+background: #bdc3c7;
+}
+
+.side a[href*='mod-post'] { margin: 0 0 5px 20px; background: #e21720; }
+.side a[href*='review'] { margin: 0 0 5px 10px; background: #00b9ce; }
+.side a[href*='discussion'] { margin: 0 0 5px 20px; background: #b196b9; }
+.side a[href*='business'] { margin: 0 0 5px 10px; background: #f1c40f; }
+.side a[href*='deals'] { margin: 0 0 5px 20px; background: #ff0066; }
+.side a[href*='meetups'] { margin: 0 0 5px 10px; background: #d07fb1; }
+.side a[href*='news'] { margin: 0 0 5px 20px; background: #4dffc3; }
+.side a[href*='fotd'] { margin: 0 0 5px 10px; background: #7b7bff; }
+.side a[href*='research'] { margin: 0 0 5px 20px; background: #751aff; }
+.side a[href*='oc'] { margin: 0 0 5px 20px; background: #4dc5d0; }
+.side a[href='http://goo.gl/9jxY49'] { margin:0 0 5px 20px; background: #bdc3c7; }
+
+.side a[href*='#mo'] { margin: 0 0 5px 20px; background: #e21720; }
+.side a[href*='#re'] { margin: 0 0 5px 10px; background: #00b9ce; }
+.side a[href*='#di'] { margin: 0 0 5px 20px; background: #b196b9; }
+.side a[href*='#bs'] { margin: 0 0 5px 10px; background: #f1c40f; }
+.side a[href*='#ds'] { margin: 0 0 5px 20px; background: #ff0066; }
+.side a[href*='#ms'] { margin:0 0 5px 10px; background: #d07fb1; }
+.side a[href*='#nw'] { margin:0 0 5px 20px; background: #4dffc3; }
+.side a[href*='#fo'] { margin:0 0 5px 10px; background: #7b7bff; }
+.side a[href*='#rs'] { margin:0 0 5px 20px; background: #751aff; }
+.side a[href*='#oc'] { margin:0 0 5px 20px; background: #4dc5d0; }
+.side a[href*='#al'] { margin:0 0 5px 20px; background: #000;}
+
+
+/******THUMB FLAIR******/
+.thumbnail {
+    background-repeat: no-repeat;
+    width: 50px!important;
+    height: 50px!important;
+}
+.thumbnail.self {
+width: 56px;
+height: 56px;
+}
+.linkflair .thumbnail img {display:none;} /* turns off image thumbnails for flaired links */
+ [class*="linkflair-"] .thumbnail {background-image: url(%%sprite%%); display: inline-block;}
+.linkflair-mod-post .thumbnail  {background-position: -70px -50px; background-size:500%;}
+.linkflair-review .thumbnail  {background-position: -190px -100px; background-size:500%;}
+.linkflair-discussion .thumbnail  {background-position: -10px -50px; background-size:500%;}
+.linkflair-business .thumbnail  {background-position: -140px -170px; background-size:500%;}
+.linkflair-deals .thumbnail  {background-position: -140px -50px; background-size:500%;}
+.linkflair-meetups .thumbnail  {background-position: -10px -160px; background-size:500%;}
+.linkflair-fotd .thumbnail {background-position: -193px -100px; background-size:500%;}
+.linkflair-oc .thumbnail {background-position: -140px -100px; background-size:500%;}
+.linkflair-research .thumbnail {background-position: -75px -160px; background-size:500%;}
+.linkflair-news .thumbnail {background-position: -10px -100px; background-size:500%;}
+
+
+/***********BLOGGER FLAIR***********/
+
+.flair-MAL{
+visibility: visible;
+text-indent: -9999px;
+border: none;
+background: url(%%33%%);
+width: 16px;
+height: 16px
+}
+
+.flair-MAL:hover {
+visibility: visible;
+width: auto !important;
+height: auto !important;
+text-indent: 0 !important;
+background-image: none !important;
+cursor: default;
+padding: 0 3px;
+background: #f0f0f0;
+color: #3e5267;
+border: 1px solid #aaa;
+border-radius: 2px;
+margin: 0 0 3px 0
+}
+
+
+/***********USER MAIL***********/
+
+
+#mail.havemail {
+    background: url(%%20049221-10110002544896720-37006360-o%%);
+    width: 25px!important;
+    height: 25px!important;
+    display: inline-block;
+background-position: -10px 2px;
+background-size:400%;
+position:bottom;
+    }
+#mail.havemail:hover {
+
+}
+#mail.nohavemail {
+    background: url(%%20049221-10110002544896720-37006360-o%%);
+    width: 25px!important;
+    height: 25px!important;
+    display: inline-block;
+background-position: -38px 2px;
+background-size:400%;
+position:bottom;
+    }
+.message-count {
+text-indent:-9999px;
+background:none;}
+
+#mail.havemail:before {
+    position: fixed;
+    padding: 16px 24px;
+    bottom: 24px;
+    z-index: 100;
+    background-color: transparent;
+    border-radius: 2px;
+margin:auto;
+    color: #fff;
+    width: 50px;
+height:50px;
+    left: 0;
+right:0;
+    content: "";
+text-transform:lowercase;
+    text-indent: 0;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    line-height: 1;
+    -webkit-transform: translateY(112px);
+    transform: translateY(112px);
+    transition: background-color .25s ease, box-shadow .25s ease;
+background-image:url(%%sprite%%); background-position:-30px-30px;background-size:350%;
+}
+
+#mail.havemail:before {
+    animation-name: toast;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    -webkit-animation-name: toast;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease
+}
+#mail.havemail:hover:before {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused
+}
+@-webkit-keyframes toast {
+    0% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    20% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    25% {transform: translateY(-8px);-webkit-transform: translateY(-8px);opacity: 1}
+    27% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    92% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    97% {transform: translateY(16px);-webkit-transform: translateY(16px);opacity: 1}
+    100% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+}
+@-o-keyframes toast {
+    0% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    20% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    25% {transform: translateY(-8px);-webkit-transform: translateY(-8px);opacity: 1}
+    27% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    92% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    97% {transform: translateY(16px);-webkit-transform: translateY(16px);opacity: 1}
+    100% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+}
+@-moz-keyframes toast {
+    0% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    20% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    25% {transform: translateY(-8px);-webkit-transform: translateY(-8px);opacity: 1}
+    27% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    92% {transform: translateY(00px);-webkit-transform: translateY(00px); opacity: 1}
+    97% {transform: translateY(16px);-webkit-transform: translateY(16px);opacity: 1}
+    100% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+}
+@keyframes toast {
+    0% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    20% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+    25% {transform: translateY(-8px);-webkit-transform: translateY(-8px);opacity: 1}
+    27% {transform: translateY(00px);-webkit-transform: translateY(00px); opacity: 1}
+    92% {transform: translateY(00px);-webkit-transform: translateY(00px);opacity: 1}
+    97% {transform: translateY(16px);-webkit-transform: translateY(16px);opacity: 1}
+    100% {transform: translateY(76px);-webkit-transform: translateY(76px);opacity: 0}
+}
+
+
+
+/***********CUSTOM FLAIR FOR MODERATORS & USERS************/
+
+.author[href$="/thecakepie"]:after{color: #ff8080 !important; content: " captain mod"}
+.author[href$="/iamOshawott"]:after{color: #ff8080 !important; content: "  ༼ つ ◕_◕ ༽つ [retired mod]"}
+.author[href$="/AutoModerator"]:after{color: #ff8080 !important; content: " Oshawott's Bot"}
+.author[href$="/biibiibeauty"]:after{color: #ff8080 !important; content: " Wishtrend - Social Media Design"}
+.author[href$="/mishibox"]:after{color: #ff8080 !important; content: " MISHIBOX Representative"}
+.author[href$="/ellumina"]:after{color: #ff8080 !important; content: " Mod [currently on hiatus]"}
+.author[href$="/ashlaboo"]:after{color: #ff8080 !important; content: " a wild modboo (•ㅅ•❀) [retired mod]"}
+.author[href$="/Ronrinesu"]:after{color: #ff8080 !important; content: " Bird person / Bio nerd"}
+.author[href$="/kstoops2conquer"]:after{color: #ff8080 !important; content: " Friendly Grump "}
+.author[href$="/kitty_paw"]:after{color: #ff8080 !important; content: " Lurking Around"}
+.author[href$="/AsianBeautyMod"]:after{color: #ff8080 !important; content: " ~*~ umbrella mod account~*~ "}
+.author[href$="/petitoignon"]:after{color: #ff8080 !important; content: " Casual AB Evangelist"}
+.author[href$="/starward-"]:after{color: #ff8080 !important; content: " Upside Down Mod"}
+.author[href$="/printf-username"]:after{color: #ff8080 !important; content: " neeeeeeeerd"}
+.author[href$="/tag_bitch"]:after{color: #ff8080 !important; content: " DM - Help Threads"}
+.author[href$="/fjordling_"]:after{color: #ff8080 !important; content: " DM - CSS/Design"}
